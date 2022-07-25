@@ -1,6 +1,6 @@
 package dto;
 
-public class TagsItem{
+public class PetCategory {
     private String name;
     private int id;
 }
