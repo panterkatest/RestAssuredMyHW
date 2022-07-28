@@ -1,12 +1,20 @@
 package dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+
 import java.util.List;
 
-public class Pet {
+@Data
+@Builder
+@AllArgsConstructor
+public class Pet{
     private List<String> photoUrls;
     private String name;
-    private int id;
+    private long id;
     private PetCategory category;
     private List<PetTagsItem> tags;
     private String status;
+
 }
